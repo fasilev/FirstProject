@@ -1,0 +1,136 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "fasil",
+      "email": "fasil@gmail.com",
+      "password": "fasil1234",
+      "cart": [],
+      "purchaseHistory": [
+        {
+          "date": "6/11/2025, 11:08:54 AM",
+          "items": [
+            {
+              "id": "3",
+              "name": "Mustang Torq Wireless in Ear Earbuds",
+              "description": "Mustang Torq Wireless in Ear Earbuds with 50H Playtime, App Support, Quad Mic ENC, 45ms Low Latency, Breathing LEDs, 13mm Drivers, Touch Control, Made in India IPX5 Ear Buds TWS Bluetooth 5.4",
+              "image": "https://m.media-amazon.com/images/I/719xn0KawFL._SY355_.jpg",
+              "price": 5990,
+              "quantity": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "username": "javid",
+      "email": "javid@gmail.com",
+      "password": "javi2121",
+      "cart": [],
+      "purchaseHistory": [
+        {
+          "date": "6/11/2025, 11:37:24 AM",
+          "items": [
+            {
+              "id": "1",
+              "name": "Bluetooth Wireless Speaker",
+              "description": "Tribit XSound Plus 2 30W 5.3 Bluetooth Wireless Speakers,Powerful Louder Stereo Sound with Bass-Enhanced XBass Function,24H Playtime,IPX7 Waterproof,Built in Mic,150ft BT Range for Home/Outdoor,Black",
+              "image": "https://m.media-amazon.com/images/I/71u1yvPoE3L._SL1500_.jpg",
+              "price": 5990,
+              "quantity": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "username": "kukku",
+      "email": "kukku@gmail.com",
+      "password": "kukku2121",
+      "cart": [],
+      "purchaseHistory": []
+    },
+    {
+      "id": "31",
+      "username": "faisal",
+      "email": "faizy123@gmail.com",
+      "password": "123456"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Bluetooth Wireless Speaker",
+      "description": "Tribit XSound Plus 2 30W 5.3 Bluetooth Wireless Speakers,Powerful Louder Stereo Sound with Bass-Enhanced XBass Function,24H Playtime,IPX7 Waterproof,Built in Mic,150ft BT Range for Home/Outdoor,Black",
+      "image": "https://m.media-amazon.com/images/I/71u1yvPoE3L._SL1500_.jpg",
+      "price": 5990,
+      "quantity": 1,
+      "oldprice":6999
+    },
+    {
+      "id": "2",
+      "name": "Bluetooth Wireless Heasphone",
+      "description": "Noise Airwave Max 3 Bluetooth On-Ear Headphones with 70H Playtime, 40mm Driver, Low Latency(up to 45ms),Dual Pairing, BT v5.3 (Midnight Blue)",
+      "image": "https://m.media-amazon.com/images/I/61XuLr92V3L._SX522_.jpg",
+      "price": 1999,
+      "quantity": 1,
+      "oldprice":2599
+    },
+    {
+      "id": "3",
+      "name": "Mustang Torq Wireless in Ear Earbuds",
+      "description": "Mustang Torq Wireless in Ear Earbuds with 50H Playtime, App Support, Quad Mic ENC, 45ms Low Latency, Breathing LEDs, 13mm Drivers, Touch Control, Made in India IPX5 Ear Buds TWS Bluetooth 5.4",
+      "image": "https://m.media-amazon.com/images/I/719xn0KawFL._SY355_.jpg",
+      "price": 5990,
+      "quantity": 1,
+      "oldprice":7499
+    },
+    {
+      "id": "4",
+      "name": "Automatic Android Projector ",
+      "description": "E GATE Atom 3X | Real Full HD 1080p Native, 13.0 Automatic Android Projector | 300 ISO | Rotatable Design | 4K HDR Support | Inbuilt Netflix, Prime | ARC-HDMI, USB, Wifi-6, BT, Screen Mirroring, Egate",
+      "image": "https://m.media-amazon.com/images/I/71BoB+5wXXL._SY355_.jpg",
+      "price": 8368,
+      "quantity": 1,
+      "oldprice":9999
+    },
+    {
+      "id": "5",
+      "name": "Gabit Smart Ring",
+      "description": "Gabit Smart Ring | Health & Fitness Tracker | Stress & Sleep Monitoring | Buy Ring Sizing Kit First | 15+ Workout Modes | Track Steps, HRV, HR, SPO2 | Smart Ring for Men & Women | Matte Black 6",
+      "image": "https://m.media-amazon.com/images/I/61RP7sa++KL._SY355_.jpg",
+      "price": 13110,
+      "quantity": 1,
+      "oldprice":14599
+    },
+    {
+      "id": "6",
+      "name": "AGARO Compressed Air Duster",
+      "description": "AGARO Compressed Air Duster, AD1719, Air Blower, 48000RPM, Variable Speed, Copper Motor, Air Spray/Blower for Electronics & Inflatables, Compressed Air Duster for Home, Car, Office",
+      "image": "https://m.media-amazon.com/images/I/71knuFDsYwL._SX425_.jpg",
+      "price": 2998,
+      "quantity": 1,
+      "oldprice":3799
+    },
+    {
+      "id": "7",
+      "name": "SAIJI Laptop Tablet Stand with Pillow",
+      "description": "SAIJI Laptop Tablet Stand with Pillow, Tablet Pillow Holder Washable Lycra with Magnetic Support Structure Compatible with 7 to 15' Devices(Grey)",
+      "image": "https://m.media-amazon.com/images/I/61h9RwvtjAL._SY355_.jpg",
+      "price": 4442,
+      "quantity": 1,
+      "oldprice":4999
+    },
+    {
+      "id": "8",
+      "name": "Electric Car Fan",
+      "description": "Electric Car Fan for Dashboard 360 Degree Rotatable Dual Head Car Auto Powerful 2 Speed Cooling Air Fan 12V DC",
+      "image": "https://m.media-amazon.com/images/I/61pHnKDtswL._SX425_.jpg",
+      "price": 499,
+      "quantity": 1,
+      "oldprice":749
+    }
+  ]
+}

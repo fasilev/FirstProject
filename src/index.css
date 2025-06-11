@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+#icons {
+    display: none;
+}
+
+#product-box:hover {
+    #icons {
+        display: flex !important;
+    }
+}
