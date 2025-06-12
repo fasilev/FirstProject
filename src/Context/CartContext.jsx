@@ -5,7 +5,6 @@ const CartContext = createContext();
 export const CartProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState([]);
 
-  // Load cart from localStorage on mount
   useEffect(() => {
     const storedCart = localStorage.getItem("cartItems");
     if (storedCart) {
@@ -13,7 +12,6 @@ export const CartProvider = ({ children }) => {
     }
   }, []);
 
-  // Save cart to localStorage whenever cartItems changes
   useEffect(() => {
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
   }, [cartItems]);
@@ -48,7 +46,6 @@ export const CartProvider = ({ children }) => {
     setCartItems([]);
   };
 
-  // ✅ Total items count for badge
   const totalItems = cartItems.reduce((sum, item) => sum + item.quantity, 0);
 
   return (
@@ -59,7 +56,7 @@ export const CartProvider = ({ children }) => {
         decreaseQuantity,
         removeFromCart,
         clearCart,
-        totalItems, // <-- export totalItems count here
+        totalItems, 
       }}
     >
       {children}
@@ -67,7 +64,7 @@ export const CartProvider = ({ children }) => {
   );
 };
 
-// Custom hook
+
 export const useCart = () => {
   const context = useContext(CartContext);
   if (!context) {
