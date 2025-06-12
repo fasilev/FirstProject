@@ -41,6 +41,20 @@
               "quantity": 1
             }
           ]
+        },
+        {
+          "date": "6/11/2025, 9:48:07 PM",
+          "items": [
+            {
+              "id": "3",
+              "name": "Mustang Torq Wireless in Ear Earbuds",
+              "description": "Mustang Torq Wireless in Ear Earbuds with 50H Playtime, App Support, Quad Mic ENC, 45ms Low Latency, Breathing LEDs, 13mm Drivers, Touch Control, Made in India IPX5 Ear Buds TWS Bluetooth 5.4",
+              "image": "https://m.media-amazon.com/images/I/719xn0KawFL._SY355_.jpg",
+              "price": 5990,
+              "quantity": 1,
+              "oldprice": 7499
+            }
+          ]
         }
       ]
     },
@@ -67,7 +81,7 @@
       "image": "https://m.media-amazon.com/images/I/71u1yvPoE3L._SL1500_.jpg",
       "price": 5990,
       "quantity": 1,
-      "oldprice":6999
+      "oldprice": 6999
     },
     {
       "id": "2",
@@ -76,7 +90,7 @@
       "image": "https://m.media-amazon.com/images/I/61XuLr92V3L._SX522_.jpg",
       "price": 1999,
       "quantity": 1,
-      "oldprice":2599
+      "oldprice": 2599
     },
     {
       "id": "3",
@@ -85,7 +99,7 @@
       "image": "https://m.media-amazon.com/images/I/719xn0KawFL._SY355_.jpg",
       "price": 5990,
       "quantity": 1,
-      "oldprice":7499
+      "oldprice": 7499
     },
     {
       "id": "4",
@@ -94,7 +108,7 @@
       "image": "https://m.media-amazon.com/images/I/71BoB+5wXXL._SY355_.jpg",
       "price": 8368,
       "quantity": 1,
-      "oldprice":9999
+      "oldprice": 9999
     },
     {
       "id": "5",
@@ -103,7 +117,7 @@
       "image": "https://m.media-amazon.com/images/I/61RP7sa++KL._SY355_.jpg",
       "price": 13110,
       "quantity": 1,
-      "oldprice":14599
+      "oldprice": 14599
     },
     {
       "id": "6",
@@ -112,7 +126,7 @@
       "image": "https://m.media-amazon.com/images/I/71knuFDsYwL._SX425_.jpg",
       "price": 2998,
       "quantity": 1,
-      "oldprice":3799
+      "oldprice": 3799
     },
     {
       "id": "7",
@@ -121,7 +135,7 @@
       "image": "https://m.media-amazon.com/images/I/61h9RwvtjAL._SY355_.jpg",
       "price": 4442,
       "quantity": 1,
-      "oldprice":4999
+      "oldprice": 4999
     },
     {
       "id": "8",
@@ -130,7 +144,7 @@
       "image": "https://m.media-amazon.com/images/I/61pHnKDtswL._SX425_.jpg",
       "price": 499,
       "quantity": 1,
-      "oldprice":749
+      "oldprice": 749
     }
   ]
 }
