@@ -29,11 +29,11 @@ const Login = () => {
       );
 
       if (matchedUser) {
-       
+        // ✅ Store full user object
         localStorage.setItem('loggedInUser', JSON.stringify(matchedUser));
 
-        
-        navigate('/');
+        // ✅ Refresh app so CartContext can load user's cart immediately
+        window.location.reload();
       } else {
         setError('Invalid email or password');
       }
@@ -87,5 +87,3 @@ const Login = () => {
 };
 
 export default Login;
-
-

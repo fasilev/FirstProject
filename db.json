@@ -27,7 +27,17 @@
       "username": "javid",
       "email": "javid@gmail.com",
       "password": "javi2121",
-      "cart": [],
+      "cart": [
+        {
+          "id": "2",
+          "name": "Bluetooth Wireless Heasphone",
+          "description": "Noise Airwave Max 3 Bluetooth On-Ear Headphones with 70H Playtime, 40mm Driver, Low Latency(up to 45ms),Dual Pairing, BT v5.3 (Midnight Blue)",
+          "image": "https://m.media-amazon.com/images/I/61XuLr92V3L._SX522_.jpg",
+          "price": 1999,
+          "quantity": 1,
+          "oldprice": 2599
+        }
+      ],
       "purchaseHistory": [
         {
           "date": "6/11/2025, 11:37:24 AM",
@@ -52,6 +62,20 @@
               "image": "https://m.media-amazon.com/images/I/719xn0KawFL._SY355_.jpg",
               "price": 5990,
               "quantity": 1,
+              "oldprice": 7499
+            }
+          ]
+        },
+        {
+          "date": "6/12/2025, 3:29:11 PM",
+          "items": [
+            {
+              "id": "3",
+              "name": "Mustang Torq Wireless in Ear Earbuds",
+              "description": "Mustang Torq Wireless in Ear Earbuds with 50H Playtime, App Support, Quad Mic ENC, 45ms Low Latency, Breathing LEDs, 13mm Drivers, Touch Control, Made in India IPX5 Ear Buds TWS Bluetooth 5.4",
+              "image": "https://m.media-amazon.com/images/I/719xn0KawFL._SY355_.jpg",
+              "price": 5990,
+              "quantity": 2,
               "oldprice": 7499
             }
           ]
@@ -139,6 +163,96 @@
     },
     {
       "id": "8",
+      "name": "Electric Car Fan",
+      "description": "Electric Car Fan for Dashboard 360 Degree Rotatable Dual Head Car Auto Powerful 2 Speed Cooling Air Fan 12V DC",
+      "image": "https://m.media-amazon.com/images/I/61pHnKDtswL._SX425_.jpg",
+      "price": 499,
+      "quantity": 1,
+      "oldprice": 749
+    },
+    {
+      "id": "9",
+      "name": "Extension Board",
+      "description": "GM 3060 Extension Board 10Amp Output 250 Volts with 2 Mtr Extension Cord & Surge Protector | Master Switch, Safety Shutter, 4 International Sockets | Multi Plug Travel Adapter for Home Appliances",
+      "image": "https://m.media-amazon.com/images/I/51IEZWXSkgL._SY355_.jpg",
+      "price": 487,
+      "quantity": 1,
+      "oldprice": 649
+    },
+    {
+      "id": "10",
+      "name": "Electric Car Fan",
+      "description": "Electric Car Fan for Dashboard 360 Degree Rotatable Dual Head Car Auto Powerful 2 Speed Cooling Air Fan 12V DC",
+      "image": "https://m.media-amazon.com/images/I/61pHnKDtswL._SX425_.jpg",
+      "price": 499,
+      "quantity": 1,
+      "oldprice": 749
+    },
+    {
+      "id": "11",
+      "name": "Electric Car Fan",
+      "description": "Electric Car Fan for Dashboard 360 Degree Rotatable Dual Head Car Auto Powerful 2 Speed Cooling Air Fan 12V DC",
+      "image": "https://m.media-amazon.com/images/I/61pHnKDtswL._SX425_.jpg",
+      "price": 499,
+      "quantity": 1,
+      "oldprice": 749
+    },
+    {
+      "id": "12",
+      "name": "Electric Car Fan",
+      "description": "Electric Car Fan for Dashboard 360 Degree Rotatable Dual Head Car Auto Powerful 2 Speed Cooling Air Fan 12V DC",
+      "image": "https://m.media-amazon.com/images/I/61pHnKDtswL._SX425_.jpg",
+      "price": 499,
+      "quantity": 1,
+      "oldprice": 749
+    },
+    {
+      "id": "13",
+      "name": "Electric Car Fan",
+      "description": "Electric Car Fan for Dashboard 360 Degree Rotatable Dual Head Car Auto Powerful 2 Speed Cooling Air Fan 12V DC",
+      "image": "https://m.media-amazon.com/images/I/61pHnKDtswL._SX425_.jpg",
+      "price": 499,
+      "quantity": 1,
+      "oldprice": 749
+    },
+    {
+      "id": "14",
+      "name": "Electric Car Fan",
+      "description": "Electric Car Fan for Dashboard 360 Degree Rotatable Dual Head Car Auto Powerful 2 Speed Cooling Air Fan 12V DC",
+      "image": "https://m.media-amazon.com/images/I/61pHnKDtswL._SX425_.jpg",
+      "price": 499,
+      "quantity": 1,
+      "oldprice": 749
+    },
+    {
+      "id": "15",
+      "name": "Electric Car Fan",
+      "description": "Electric Car Fan for Dashboard 360 Degree Rotatable Dual Head Car Auto Powerful 2 Speed Cooling Air Fan 12V DC",
+      "image": "https://m.media-amazon.com/images/I/61pHnKDtswL._SX425_.jpg",
+      "price": 499,
+      "quantity": 1,
+      "oldprice": 749
+    },
+    {
+      "id": "16",
+      "name": "Electric Car Fan",
+      "description": "Electric Car Fan for Dashboard 360 Degree Rotatable Dual Head Car Auto Powerful 2 Speed Cooling Air Fan 12V DC",
+      "image": "https://m.media-amazon.com/images/I/61pHnKDtswL._SX425_.jpg",
+      "price": 499,
+      "quantity": 1,
+      "oldprice": 749
+    },
+    {
+      "id": "17",
+      "name": "Electric Car Fan",
+      "description": "Electric Car Fan for Dashboard 360 Degree Rotatable Dual Head Car Auto Powerful 2 Speed Cooling Air Fan 12V DC",
+      "image": "https://m.media-amazon.com/images/I/61pHnKDtswL._SX425_.jpg",
+      "price": 499,
+      "quantity": 1,
+      "oldprice": 749
+    },
+    {
+      "id": "18",
       "name": "Electric Car Fan",
       "description": "Electric Car Fan for Dashboard 360 Degree Rotatable Dual Head Car Auto Powerful 2 Speed Cooling Air Fan 12V DC",
       "image": "https://m.media-amazon.com/images/I/61pHnKDtswL._SX425_.jpg",

@@ -1,49 +1,53 @@
 import React, { useEffect, useState } from 'react';
 
 const PurchaseHistory = () => {
-  const [orders, setOrders] = useState([]);
+  const [user, setUser] = useState(null);
+  const [history, setHistory] = useState([]);
 
   useEffect(() => {
-    const userData = JSON.parse(localStorage.getItem('loggedInUser'));
-    if (userData) {
-      fetch(`http://localhost:2084/users/${userData.id}`)
-        .then(res => res.json())
-        .then(data => setOrders(data.orders || []));
-    }
+    const fetchHistory = async () => {
+      const res = await fetch(`http://localhost:2084/users/1`); // Replace 1 with dynamic ID if needed
+      const data = await res.json();
+      setUser(data);
+      setHistory(data.purchaseHistory || []);
+    };
+    fetchHistory();
   }, []);
 
   return (
-    <div className="container mx-auto py-10 px-4">
-      <h1 className="text-3xl font-bold text-center mb-8 text-indigo-600">My Purchase History</h1>
+    <div className="max-w-5xl mx-auto py-10 px-4">
+      <h1 className="text-2xl font-bold mb-2">Purchase History</h1>
+      {user && (
+        <p className="text-gray-600 mb-6">
+          User: <span className="font-semibold">{user.username}</span>
+        </p>
+      )}
 
-      {orders.length === 0 ? (
-        <div className="text-center text-gray-500 text-lg">No previous orders found.</div>
+      {history.length === 0 ? (
+        <p className="text-gray-500">No purchases yet.</p>
       ) : (
-        <div className="grid grid-cols-1 gap-6">
-          {orders.map(order => (
-            <div key={order.id} className="border border-gray-300 rounded-lg shadow-lg p-6 bg-white">
-              <div className="flex justify-between mb-4">
-                <div>
-                  <p className="font-semibold text-gray-700">Order ID: <span className="text-gray-500">{order.id}</span></p>
-                  <p className="font-semibold text-gray-700">Date: <span className="text-gray-500">{order.date}</span></p>
+        history.map((order, index) => (
+          <div key={index} className="mb-6 border p-4 rounded-lg shadow-sm">
+            <p className="font-medium text-gray-700 mb-2">Date: {order.date}</p>
+            <div className="grid md:grid-cols-2 gap-4">
+              {order.items.map((item, i) => (
+                <div key={i} className="flex gap-4">
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    className="w-24 h-24 object-cover rounded"
+                  />
+                  <div>
+                    <h2 className="font-semibold">{item.name}</h2>
+                    <p className="text-sm text-gray-600">{item.description}</p>
+                    <p className="text-indigo-600 font-bold">₹{item.price}</p>
+                    <p className="text-sm text-gray-500">Qty: {item.quantity}</p>
+                  </div>
                 </div>
-                <div className="text-right font-bold text-lg text-green-600">₹{order.total}</div>
-              </div>
-
-              <div>
-                <h3 className="font-semibold mb-2 text-gray-700">Items:</h3>
-                <ul className="divide-y divide-gray-200">
-                  {order.items.map(item => (
-                    <li key={item.id} className="py-2 flex justify-between">
-                      <span className="text-gray-600">{item.name} × {item.quantity}</span>
-                      <span className="text-gray-500">₹{item.price * item.quantity}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              ))}
             </div>
-          ))}
-        </div>
+          </div>
+        ))
       )}
     </div>
   );

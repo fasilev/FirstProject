@@ -28,28 +28,34 @@ const PaymentPage = () => {
       return;
     }
 
-    // Prepare new order
     const newOrder = {
       date: new Date().toLocaleString(),
       items: cartItems
     };
 
     try {
+      // Fetch user data
       const userResponse = await fetch(`http://localhost:2084/users/${loggedInUser.id}`);
       const userData = await userResponse.json();
 
-      const updatedPurchaseHistory = [...userData.purchaseHistory, newOrder];
+      const previousHistory = userData.purchaseHistory || [];
+      const updatedPurchaseHistory = [...previousHistory, newOrder];
 
+      // Update both purchaseHistory and clear cart on backend
       await fetch(`http://localhost:2084/users/${loggedInUser.id}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ purchaseHistory: updatedPurchaseHistory }),
+        body: JSON.stringify({ 
+          purchaseHistory: updatedPurchaseHistory,
+          cart: []  // clear cart after successful purchase
+        }),
       });
 
-      clearCart();
+      clearCart();  // clear frontend cart context also
       navigate('/success');
     } catch (err) {
       console.error("Error updating purchase history:", err);
+      alert("Something went wrong. Please try again.");
     }
   };
 
