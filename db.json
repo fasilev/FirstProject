@@ -1,10 +1,19 @@
 {
   "users": [
     {
+      "id": "7820",
+      "username": "admin",
+      "email": "admin@gmail.com",
+      "role": "admin",
+      "password": "admin"
+    },
+    {
       "id": "1",
       "username": "fasil",
       "email": "fasil@gmail.com",
       "password": "fasil1234",
+      "role": "user",
+      "blocked": false,
       "cart": [],
       "purchaseHistory": [
         {
@@ -27,6 +36,8 @@
       "username": "javid",
       "email": "javid@gmail.com",
       "password": "javi2121",
+      "role": "user",
+      "blocked": false,
       "cart": [
         {
           "id": "2",
@@ -87,6 +98,8 @@
       "username": "kukku",
       "email": "kukku@gmail.com",
       "password": "kukku2121",
+      "role": "user",
+      "blocked": false,
       "cart": [],
       "purchaseHistory": []
     },
@@ -94,7 +107,18 @@
       "id": "31",
       "username": "faisal",
       "email": "faizy123@gmail.com",
-      "password": "123456"
+      "password": "123456",
+      "role": "user",
+      "blocked": false,
+      "cart": [],
+      "purchaseHistory": []
+    },
+    {
+      "id": "7820",
+      "username": "admin",
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "role": "admin"
     }
   ],
   "products": [
