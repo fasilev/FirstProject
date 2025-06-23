@@ -38,17 +38,7 @@
       "password": "javi2121",
       "role": "user",
       "blocked": false,
-      "cart": [
-        {
-          "id": "2",
-          "name": "Bluetooth Wireless Heasphone",
-          "description": "Noise Airwave Max 3 Bluetooth On-Ear Headphones with 70H Playtime, 40mm Driver, Low Latency(up to 45ms),Dual Pairing, BT v5.3 (Midnight Blue)",
-          "image": "https://m.media-amazon.com/images/I/61XuLr92V3L._SX522_.jpg",
-          "price": 1999,
-          "quantity": 1,
-          "oldprice": 2599
-        }
-      ],
+      "cart": [],
       "purchaseHistory": [
         {
           "date": "6/11/2025, 11:37:24 AM",
@@ -122,15 +112,6 @@
     }
   ],
   "products": [
-    {
-      "id": "1",
-      "name": "Bluetooth Wireless Speaker",
-      "description": "Tribit XSound Plus 2 30W 5.3 Bluetooth Wireless Speakers,Powerful Louder Stereo Sound with Bass-Enhanced XBass Function,24H Playtime,IPX7 Waterproof,Built in Mic,150ft BT Range for Home/Outdoor,Black",
-      "image": "https://m.media-amazon.com/images/I/71u1yvPoE3L._SL1500_.jpg",
-      "price": 5990,
-      "quantity": 1,
-      "oldprice": 6999
-    },
     {
       "id": "2",
       "name": "Bluetooth Wireless Heasphone",
@@ -210,7 +191,8 @@
       "image": "https://m.media-amazon.com/images/I/61pHnKDtswL._SX425_.jpg",
       "price": 499,
       "quantity": 1,
-      "oldprice": 749
+      "oldprice": 749,
+      "status": "Inactive"
     },
     {
       "id": "11",
