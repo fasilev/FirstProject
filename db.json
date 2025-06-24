@@ -5,7 +5,30 @@
       "username": "admin",
       "email": "admin@gmail.com",
       "role": "admin",
-      "password": "admin"
+      "password": "admin",
+      "cart": [
+        {
+          "id": "1750660837654",
+          "name": "Premium 45W Type-C Fast Charger Adapter",
+          "description": " Compatible with Nothing Phone 2a, 2, 1 & Type-C Devices | Smart Power Adapter with 6-Layer Protection",
+          "price": "799",
+          "oldprice": "2499",
+          "stock": "",
+          "status": "Active",
+          "image": "https://m.media-amazon.com/images/I/61EgXB4VB-L._SX522_.jpg",
+          "quantity": 1
+        },
+        {
+          "id": "10",
+          "name": "Sony DualSense Wireless Controller White",
+          "description": "Bring gaming worlds to life - a) feel your in-game actions and Environment simulated through haptic feedback2, b)experience varying force and tension at your fingertips with adaptive triggers2;Chat online through the built-in microphone3, connect a headset directly via the 3.5mm jack, Switch voice capture on & off using the dedicated mute button, record & broadcast your epic gaming moments",
+          "image": "https://m.media-amazon.com/images/I/31nh0udpAKL._SX300_SY300_QL70_FMwebp_.jpg",
+          "price": 6110,
+          "quantity": 1,
+          "oldprice": 6390,
+          "status": "Inactive"
+        }
+      ]
     },
     {
       "id": "1",
@@ -38,7 +61,17 @@
       "password": "javi2121",
       "role": "user",
       "blocked": false,
-      "cart": [],
+      "cart": [
+        {
+          "id": "4",
+          "name": "Automatic Android Projector ",
+          "description": "E GATE Atom 3X | Real Full HD 1080p Native, 13.0 Automatic Android Projector | 300 ISO | Rotatable Design | 4K HDR Support | Inbuilt Netflix, Prime | ARC-HDMI, USB, Wifi-6, BT, Screen Mirroring, Egate",
+          "image": "https://m.media-amazon.com/images/I/71BoB+5wXXL._SY355_.jpg",
+          "price": 8368,
+          "quantity": 2,
+          "oldprice": 9999
+        }
+      ],
       "purchaseHistory": [
         {
           "date": "6/11/2025, 11:37:24 AM",
@@ -119,7 +152,9 @@
       "image": "https://m.media-amazon.com/images/I/61XuLr92V3L._SX522_.jpg",
       "price": 1999,
       "quantity": 1,
-      "oldprice": 2599
+      "oldprice": 2599,
+      "stock": "6",
+      "status": "Active"
     },
     {
       "id": "3",
@@ -128,7 +163,9 @@
       "image": "https://m.media-amazon.com/images/I/719xn0KawFL._SY355_.jpg",
       "price": 5990,
       "quantity": 1,
-      "oldprice": 7499
+      "oldprice": 7499,
+      "status": "Active",
+      "stock": "5"
     },
     {
       "id": "4",
@@ -186,85 +223,125 @@
     },
     {
       "id": "10",
-      "name": "Electric Car Fan",
-      "description": "Electric Car Fan for Dashboard 360 Degree Rotatable Dual Head Car Auto Powerful 2 Speed Cooling Air Fan 12V DC",
-      "image": "https://m.media-amazon.com/images/I/61pHnKDtswL._SX425_.jpg",
-      "price": 499,
+      "name": "Sony DualSense Wireless Controller White",
+      "description": "Bring gaming worlds to life - a) feel your in-game actions and Environment simulated through haptic feedback2, b)experience varying force and tension at your fingertips with adaptive triggers2;Chat online through the built-in microphone3, connect a headset directly via the 3.5mm jack, Switch voice capture on & off using the dedicated mute button, record & broadcast your epic gaming moments",
+      "image": "https://m.media-amazon.com/images/I/31nh0udpAKL._SX300_SY300_QL70_FMwebp_.jpg",
+      "price": 6110,
       "quantity": 1,
-      "oldprice": 749,
+      "oldprice": 6390,
       "status": "Inactive"
     },
     {
       "id": "11",
-      "name": "Electric Car Fan",
-      "description": "Electric Car Fan for Dashboard 360 Degree Rotatable Dual Head Car Auto Powerful 2 Speed Cooling Air Fan 12V DC",
-      "image": "https://m.media-amazon.com/images/I/61pHnKDtswL._SX425_.jpg",
-      "price": 499,
+      "name": "SKADIOO Weighing scale",
+      "description": "Weight Machine for Kitchen, Kitchen Weighing Scale,SF-400 Weight Machine for Shop, Food Weighing Scale, Multipurpose Portable Electronic Digital Weighing Scale Weight Machine",
+      "image": "https://m.media-amazon.com/images/I/61WLHUnn+pL._SX342_.jpg",
+      "price": 184,
       "quantity": 1,
-      "oldprice": 749
+      "oldprice": 599
     },
     {
       "id": "12",
-      "name": "Electric Car Fan",
-      "description": "Electric Car Fan for Dashboard 360 Degree Rotatable Dual Head Car Auto Powerful 2 Speed Cooling Air Fan 12V DC",
-      "image": "https://m.media-amazon.com/images/I/61pHnKDtswL._SX425_.jpg",
-      "price": 499,
+      "name": "AGARO Compressed Air Duster",
+      "description": "AD1719, Air Blower, 48000RPM, Variable Speed, Copper Motor, Air Spray/Blower for Electronics & Inflatables, Compressed Air Duster for Home, Car, Office",
+      "image": "https://m.media-amazon.com/images/I/71knuFDsYwL._SX425_.jpg",
+      "price": 2998,
       "quantity": 1,
-      "oldprice": 749
+      "oldprice": 3699
     },
     {
       "id": "13",
-      "name": "Electric Car Fan",
-      "description": "Electric Car Fan for Dashboard 360 Degree Rotatable Dual Head Car Auto Powerful 2 Speed Cooling Air Fan 12V DC",
-      "image": "https://m.media-amazon.com/images/I/61pHnKDtswL._SX425_.jpg",
-      "price": 499,
+      "name": "AGARO Galaxy Electric Blower",
+      "description": "Blow Rate 2.8 m3/Min, 13000 RPM, Professional Quality, Clears Away Dust Particles from Furniture, Cars, Windows & Other Rigid Surfaces, 600W, Red",
+      "image": "https://m.media-amazon.com/images/I/61mMe-79xQL._SX425_.jpg",
+      "price": 1280,
       "quantity": 1,
-      "oldprice": 749
+      "oldprice": 2195
     },
     {
       "id": "14",
-      "name": "Electric Car Fan",
-      "description": "Electric Car Fan for Dashboard 360 Degree Rotatable Dual Head Car Auto Powerful 2 Speed Cooling Air Fan 12V DC",
-      "image": "https://m.media-amazon.com/images/I/61pHnKDtswL._SX425_.jpg",
-      "price": 499,
+      "name": "HUMBLE 7-in-1 Multifunctional Electronic Cleaner Kit ",
+      "description": " Keyboard Cleaner Kit | Cleaning Kit for Airpods & Laptop | Screen Dust Brush | Soft Swipe Airpods Cleaner Pen | Key Puller & Empty Spray Bottle",
+      "image": "https://m.media-amazon.com/images/I/61dSzOh-ciL._SY450_.jpg",
+      "price": 259,
       "quantity": 1,
-      "oldprice": 749
+      "oldprice": 999
     },
     {
       "id": "15",
-      "name": "Electric Car Fan",
-      "description": "Electric Car Fan for Dashboard 360 Degree Rotatable Dual Head Car Auto Powerful 2 Speed Cooling Air Fan 12V DC",
-      "image": "https://m.media-amazon.com/images/I/61pHnKDtswL._SX425_.jpg",
-      "price": 499,
+      "name": "5 in 1 Mag-Safe Charging Station ",
+      "description": "Compatible with iPhone 15/14/13/12 Series and Apple Watch Ultra/SE/9/8/7/6/5/4/3/2 and Airpods 3/2/Pro with LED Lamp and USB Port [ White ]",
+      "image": "https://m.media-amazon.com/images/I/51ICEJw-gQL._SY355_.jpg",
+      "price": 4599,
       "quantity": 1,
-      "oldprice": 749
+      "oldprice": 9499
     },
     {
       "id": "16",
-      "name": "Electric Car Fan",
-      "description": "Electric Car Fan for Dashboard 360 Degree Rotatable Dual Head Car Auto Powerful 2 Speed Cooling Air Fan 12V DC",
-      "image": "https://m.media-amazon.com/images/I/61pHnKDtswL._SX425_.jpg",
-      "price": 499,
+      "name": "rts Universal Travel Adapter",
+      "description": "International All in One Worldwide Travel Adapter and Wall Charger with USB Ports with Multi Type Power Outlet USB 2.1A,100-250 Voltage Travel Charger (Black)",
+      "image": "https://m.media-amazon.com/images/I/611RCy1XjsL._SY606_.jpg",
+      "price": 587,
       "quantity": 1,
-      "oldprice": 749
+      "oldprice": 739
     },
     {
       "id": "17",
-      "name": "Electric Car Fan",
-      "description": "Electric Car Fan for Dashboard 360 Degree Rotatable Dual Head Car Auto Powerful 2 Speed Cooling Air Fan 12V DC",
-      "image": "https://m.media-amazon.com/images/I/61pHnKDtswL._SX425_.jpg",
-      "price": 499,
+      "name": "Digital Alarm Clock",
+      "description": "Battery Operated Small Desk Clocks,with Date,Indoor Temperature,Smart Night Light,LCD Electronic Clock for Bedroom Home Office - White (KDwhite)",
+      "image": "https://m.media-amazon.com/images/I/51S7mh5P8dL._SX425_.jpg",
+      "price": 298,
       "quantity": 1,
-      "oldprice": 749
+      "oldprice": 557
     },
     {
       "id": "18",
-      "name": "Electric Car Fan",
-      "description": "Electric Car Fan for Dashboard 360 Degree Rotatable Dual Head Car Auto Powerful 2 Speed Cooling Air Fan 12V DC",
-      "image": "https://m.media-amazon.com/images/I/61pHnKDtswL._SX425_.jpg",
-      "price": 499,
+      "name": "AI Auto Face Tracking Tripod",
+      "description": "360° Rotation Mobile Stand for Video Recording | Rechargeable Phone Holder Camera Stand for Shooting | Gesture Control | No App Needed - Your e Store (White) (White)",
+      "image": "https://m.media-amazon.com/images/I/41-9cZuEryL._SY355_.jpg",
+      "price": 2997,
       "quantity": 1,
-      "oldprice": 749
+      "oldprice": 5999
+    },
+    {
+      "id": "1750654006356",
+      "name": "AVIDEQ XLR Connector Set",
+      "description": "5 Male + 5 Female | 3-Pin Solder Type XLR Plug for Microphones, Audio Cables, Mixers & Sound Equipment – Pack of 10",
+      "price": "845",
+      "stock": "6",
+      "status": "Active",
+      "image": "https://m.media-amazon.com/images/I/51p1b3Ry56L._SX522_.jpg",
+      "oldprice": 1299
+    },
+    {
+      "id": "1750660837654",
+      "name": "Premium 45W Type-C Fast Charger Adapter",
+      "description": " Compatible with Nothing Phone 2a, 2, 1 & Type-C Devices | Smart Power Adapter with 6-Layer Protection",
+      "price": "799",
+      "oldprice": "2499",
+      "stock": "",
+      "status": "Active",
+      "image": "https://m.media-amazon.com/images/I/61EgXB4VB-L._SX522_.jpg"
+    },
+    {
+      "id": "1750668232587",
+      "name": "WALKENT Stylish 15.6\" Laptop Bag",
+      "description": "Premium Leather, Waterproof, Backpack with Front & Side Pockets for Travel Office College Men Women 28L, 1 Compartment",
+      "price": "2790",
+      "oldprice": "5990",
+      "stock": "",
+      "status": "Active",
+      "image": "https://m.media-amazon.com/images/I/61M8Z8FrhEL._SX522_.jpg"
+    },
+    {
+      "id": "1750674529125",
+      "name": "WALKENT Stylish 15.6\" Laptop Bag",
+      "description": " Premium Leather, Waterproof, Backpack with Front & Side Pockets for Travel Office College Men Women 28L, 1 Compartment",
+      "price": "2790",
+      "oldprice": "5990",
+      "stock": "5",
+      "status": "Active",
+      "image": "https://m.media-amazon.com/images/I/61M8Z8FrhEL._SX522_.jpg"
     }
   ]
 }

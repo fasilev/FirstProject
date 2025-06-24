@@ -7,7 +7,9 @@ const AdminProductPage = () => {
   const [editId, setEditId] = useState(null);
   const [formData, setFormData] = useState({
     name: '',
+    description: '',
     price: '',
+    oldprice: '',
     stock: '',
     status: 'Active',
     image: '',
@@ -31,33 +33,40 @@ const AdminProductPage = () => {
   const handleAddOrEditProduct = (e) => {
     e.preventDefault();
 
-    if (editId) {
-      fetch(`http://localhost:2084/products/${editId}`, {
-        method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...formData, id: editId }),
-      })
-        .then((res) => res.json())
-        .then((updated) => {
-          setProducts(products.map((p) => (p.id === editId ? updated : p)));
-          setFormData({ name: '', price: '', stock: '', status: 'Active', image: '' });
-          setEditId(null);
-          setShowForm(false);
-        });
-    } else {
-      const newProduct = { ...formData, id: Date.now().toString() };
-      fetch('http://localhost:2084/products', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(newProduct),
-      })
-        .then((res) => res.json())
-        .then((data) => {
+    const payload = {
+      ...formData,
+      id: editId ? editId : Date.now().toString(),
+    };
+
+    const method = editId ? 'PUT' : 'POST';
+    const url = editId
+      ? `http://localhost:2084/products/${editId}`
+      : 'http://localhost:2084/products';
+
+    fetch(url, {
+      method,
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (editId) {
+          setProducts(products.map((p) => (p.id === editId ? data : p)));
+        } else {
           setProducts([...products, data]);
-          setFormData({ name: '', price: '', stock: '', status: 'Active', image: '' });
-          setShowForm(false);
+        }
+        setFormData({
+          name: '',
+          description: '',
+          price: '',
+          oldprice: '',
+          stock: '',
+          status: 'Active',
+          image: '',
         });
-    }
+        setEditId(null);
+        setShowForm(false);
+      });
   };
 
   const openEditForm = (product) => {
@@ -69,14 +78,22 @@ const AdminProductPage = () => {
   return (
     <div className="flex min-h-screen bg-gray-100">
       <Sidebar />
-      <main className="p-6 w-full ml-60">
+      <main className="p-6 w-full ml-64">
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-2xl font-semibold">Product Management</h2>
           <button
             className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
             onClick={() => {
               setShowForm(true);
-              setFormData({ name: '', price: '', stock: '', status: 'Active', image: '' });
+              setFormData({
+                name: '',
+                description: '',
+                price: '',
+                oldprice: '',
+                stock: '',
+                status: 'Active',
+                image: '',
+              });
               setEditId(null);
             }}
           >
@@ -91,6 +108,7 @@ const AdminProductPage = () => {
                 <th className="p-3 text-left">Image</th>
                 <th className="p-3 text-left">Name</th>
                 <th className="p-3 text-left">Price</th>
+                <th className="p-3 text-left">Old Price</th>
                 <th className="p-3 text-left">Stock</th>
                 <th className="p-3 text-left">Status</th>
                 <th className="p-3 text-left">Actions</th>
@@ -104,13 +122,12 @@ const AdminProductPage = () => {
                   </td>
                   <td className="p-3">{p.name}</td>
                   <td className="p-3">₹{p.price}</td>
+                  <td className="p-3 line-through text-red-500">₹{p.oldprice || '-'}</td>
                   <td className="p-3">{p.stock}</td>
                   <td className="p-3">{p.status}</td>
                   <td className="p-3 space-x-2">
                     <button onClick={() => openEditForm(p)} className="text-blue-600 hover:underline text-sm">Edit</button>
-                    <button onClick={() => handleDelete(p.id)} className="text-red-600 hover:underline text-sm">
-                      Delete
-                    </button>
+                    <button onClick={() => handleDelete(p.id)} className="text-red-600 hover:underline text-sm">Delete</button>
                   </td>
                 </tr>
               ))}
@@ -118,10 +135,12 @@ const AdminProductPage = () => {
           </table>
         </div>
 
+        {/* Form Modal */}
         {showForm && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
             <form onSubmit={handleAddOrEditProduct} className="bg-white p-6 rounded w-96 shadow relative">
               <h3 className="text-lg font-bold mb-4">{editId ? 'Edit Product' : 'Add Product'}</h3>
+
               <input
                 type="text"
                 placeholder="Name"
@@ -130,6 +149,15 @@ const AdminProductPage = () => {
                 className="w-full mb-3 p-2 border rounded"
                 required
               />
+
+              <textarea
+                placeholder="Description"
+                value={formData.description}
+                onChange={(e) => setFormData({ ...formData, description: e.target.value })}
+                className="w-full mb-3 p-2 border rounded"
+                required
+              />
+
               <input
                 type="number"
                 placeholder="Price"
@@ -138,6 +166,15 @@ const AdminProductPage = () => {
                 className="w-full mb-3 p-2 border rounded"
                 required
               />
+
+              <input
+                type="number"
+                placeholder="Old Price"
+                value={formData.oldprice}
+                onChange={(e) => setFormData({ ...formData, oldprice: e.target.value })}
+                className="w-full mb-3 p-2 border rounded"
+              />
+
               <input
                 type="number"
                 placeholder="Stock"
@@ -145,6 +182,7 @@ const AdminProductPage = () => {
                 onChange={(e) => setFormData({ ...formData, stock: e.target.value })}
                 className="w-full mb-3 p-2 border rounded"
               />
+
               <input
                 type="text"
                 placeholder="Image URL"
@@ -153,6 +191,7 @@ const AdminProductPage = () => {
                 className="w-full mb-3 p-2 border rounded"
                 required
               />
+
               <select
                 value={formData.status}
                 onChange={(e) => setFormData({ ...formData, status: e.target.value })}
@@ -163,7 +202,11 @@ const AdminProductPage = () => {
               </select>
 
               <div className="flex justify-end gap-2">
-                <button type="button" onClick={() => setShowForm(false)} className="bg-gray-300 px-4 py-2 rounded">
+                <button
+                  type="button"
+                  onClick={() => setShowForm(false)}
+                  className="bg-gray-300 px-4 py-2 rounded"
+                >
                   Cancel
                 </button>
                 <button type="submit" className="bg-blue-600 text-white px-4 py-2 rounded">
