@@ -39,7 +39,7 @@ const AdminOrders = () => {
                           <img src={item.image} alt={item.name} className="w-16 h-16 object-cover rounded" />
                           <div>
                             <p className="font-semibold">{item.name}</p>
-                            <p className="text-sm">Quantity: {item.quantity}</p>
+                            <p className="text-sm">quantity: {item.quantity}</p>
                             <p className="text-sm text-green-700">₹{item.price}</p>
                           </div>
                         </div>
